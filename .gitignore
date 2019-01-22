@@ -3,7 +3,7 @@
 # Amplify
 
 amplify/
-src/aws-exports.ts 
+src/aws-exports.js
 .amplifyrc
 .graphqlconfig.yml
 

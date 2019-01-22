@@ -6,6 +6,7 @@ export type CreateTaskInput = {
   title: string,
   description?: string | null,
   status?: string | null,
+  collaborators?: Array< string | null > | null,
 };
 
 export type UpdateTaskInput = {
@@ -13,6 +14,7 @@ export type UpdateTaskInput = {
   title?: string | null,
   description?: string | null,
   status?: string | null,
+  collaborators?: Array< string | null > | null,
 };
 
 export type DeleteTaskInput = {
@@ -38,6 +40,7 @@ export type ModelTaskFilterInput = {
   title?: ModelStringFilterInput | null,
   description?: ModelStringFilterInput | null,
   status?: ModelStringFilterInput | null,
+  collaborators?: ModelStringFilterInput | null,
   and?: Array< ModelTaskFilterInput | null > | null,
   or?: Array< ModelTaskFilterInput | null > | null,
   not?: ModelTaskFilterInput | null,
@@ -88,6 +91,7 @@ export type CreateTaskMutation = {
     title: string,
     description: string | null,
     status: string | null,
+    collaborators: Array< string | null > | null,
   } | null,
 };
 
@@ -102,6 +106,7 @@ export type UpdateTaskMutation = {
     title: string,
     description: string | null,
     status: string | null,
+    collaborators: Array< string | null > | null,
   } | null,
 };
 
@@ -116,6 +121,7 @@ export type DeleteTaskMutation = {
     title: string,
     description: string | null,
     status: string | null,
+    collaborators: Array< string | null > | null,
   } | null,
 };
 
@@ -166,6 +172,7 @@ export type GetTaskQuery = {
     title: string,
     description: string | null,
     status: string | null,
+    collaborators: Array< string | null > | null,
   } | null,
 };
 
@@ -184,6 +191,7 @@ export type ListTasksQuery = {
       title: string,
       description: string | null,
       status: string | null,
+      collaborators: Array< string | null > | null,
     } | null > | null,
     nextToken: string | null,
   } | null,
@@ -226,6 +234,7 @@ export type OnCreateTaskSubscription = {
     title: string,
     description: string | null,
     status: string | null,
+    collaborators: Array< string | null > | null,
   } | null,
 };
 
@@ -236,6 +245,7 @@ export type OnUpdateTaskSubscription = {
     title: string,
     description: string | null,
     status: string | null,
+    collaborators: Array< string | null > | null,
   } | null,
 };
 
@@ -246,6 +256,7 @@ export type OnDeleteTaskSubscription = {
     title: string,
     description: string | null,
     status: string | null,
+    collaborators: Array< string | null > | null,
   } | null,
 };
 

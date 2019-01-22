@@ -7,6 +7,7 @@ export const onCreateTask = `subscription OnCreateTask {
     title
     description
     status
+    collaborators
   }
 }
 `;
@@ -16,6 +17,7 @@ export const onUpdateTask = `subscription OnUpdateTask {
     title
     description
     status
+    collaborators
   }
 }
 `;
@@ -25,6 +27,7 @@ export const onDeleteTask = `subscription OnDeleteTask {
     title
     description
     status
+    collaborators
   }
 }
 `;

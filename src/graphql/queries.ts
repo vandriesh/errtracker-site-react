@@ -7,6 +7,7 @@ export const getTask = `query GetTask($id: ID!) {
     title
     description
     status
+    collaborators
   }
 }
 `;
@@ -21,6 +22,7 @@ export const listTasks = `query ListTasks(
       title
       description
       status
+      collaborators
     }
     nextToken
   }

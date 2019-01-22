@@ -7,6 +7,7 @@ export const createTask = `mutation CreateTask($input: CreateTaskInput!) {
     title
     description
     status
+    collaborators
   }
 }
 `;
@@ -16,6 +17,7 @@ export const updateTask = `mutation UpdateTask($input: UpdateTaskInput!) {
     title
     description
     status
+    collaborators
   }
 }
 `;
@@ -25,6 +27,7 @@ export const deleteTask = `mutation DeleteTask($input: DeleteTaskInput!) {
     title
     description
     status
+    collaborators
   }
 }
 `;

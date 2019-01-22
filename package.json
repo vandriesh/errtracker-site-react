@@ -29,6 +29,7 @@
   "devDependencies": {
     "@types/react": "^16.7.20",
     "aws-amplify": "^1.1.19",
-    "aws-amplify-react": "^2.3.0"
+    "aws-amplify-react": "^2.3.0",
+    "prettier": "^1.16.0"
   }
 }
